@@ -1,0 +1,14 @@
+spring:
+  # GCP認証情報ファイルへのパスを設定
+  cloud:
+    gcp:
+      credentials:
+        location: classpath:/cwo-example-b5ea8b058137.json
+  # PostgreSQLの設定
+  datasource:
+    url: jdbc:postgresql://localhost:54320/takumi?currentSchema=ssp
+    username: web
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
