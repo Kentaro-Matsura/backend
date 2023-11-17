@@ -15,7 +15,6 @@ public class ExampleController {
             var dto = new MsUserDto(msUser.getId(), msUser.getName());
             System.out.println(dto);
         }
-        System.out.println("hoge");
         return repository.findById(1).orElse(null);
     }
 }
